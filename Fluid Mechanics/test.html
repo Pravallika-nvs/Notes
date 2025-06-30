@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sidebar Test</title>
+</head>
+<body>
+  <aside id="sidebar"></aside>
+
+  <main>
+    <h1>Test Page</h1>
+    <p>This is just a test to see if the sidebar loads.</p>
+  </main>
+
+  <script>
+    fetch("sidebar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("sidebar").innerHTML = data;
+      })
+      .catch(error => console.error("Sidebar failed to load:", error));
+  </script>
+</body>
+</html>
