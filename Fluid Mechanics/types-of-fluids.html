@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <aside w3-include-html="sidebar.html"></aside>
+    <aside id="sidebar"></aside>
     <section id="types-of-fluids">
             <h2>2. Types of Fluids</h2>
             <p>Fluids can be classified into two main types: Ideal Fluids and Real Fluids</p>
@@ -32,6 +32,15 @@
   <a href="what-is-a-fluid.html" class="prev-btn">← Previous</a>
   <a href="pressure-drop.html" class="next-btn">Next →</a>
 </div>
-
+<script>
+  fetch("sidebar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("sidebar").innerHTML = data;
+    })
+    .catch(error => {
+      console.error("Sidebar failed to load:", error);
+    });
+</script>
 </body>
 </html>

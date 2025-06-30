@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <aside w3-include-html="sidebar.html"></aside>
+    <aside id="sidebar"></aside>
     <section id="pressure-drop">
             <h2>3. Importance of Pressure Drop</h2>
             <p>Pressure drop is a crucial aspect in fluid mechanics, especially in the design and operation of piping systems.</p>
@@ -23,6 +23,15 @@
   <a href="types-of-fluids.html" class="prev-btn">← Previous</a>
   <a href="pump-work-and-energy.html" class="next-btn">Next →</a>
 </div>
-
+<script>
+  fetch("sidebar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("sidebar").innerHTML = data;
+    })
+    .catch(error => {
+      console.error("Sidebar failed to load:", error);
+    });
+</script>
 </body>
 </html>

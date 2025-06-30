@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <aside w3-include-html="sidebar.html"></aside>
+    <aside id="sidebar"></aside>
     <section id="types-of-pumps">
             <h2>7. Types of Pumps</h2>
             <p>Pumps are mechanical devices used to move fluids from one place to another.</p>
@@ -33,6 +33,15 @@
   <a href="flow-measuring.html" class="prev-btn">← Previous</a>
   <a href="special-valves-and-pumps.html" class="next-btn">Next →</a>
 </div>
-
+<script>
+  fetch("sidebar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("sidebar").innerHTML = data;
+    })
+    .catch(error => {
+      console.error("Sidebar failed to load:", error);
+    });
+</script>
 </body>
 </html>

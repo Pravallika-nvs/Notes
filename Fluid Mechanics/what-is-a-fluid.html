@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <aside w3-include-html="sidebar.html"></aside>
+    <aside id="sidebar"></aside>
     <section id="what-is-a-fluid">
         <h2>1. What is a Fluid?</h2>
         <p>A fluid is a substance that does not have a definite shape but takes the shape of its container.
@@ -23,4 +23,14 @@
         <a href="types-of-fluids.html" class="next-btn">Next →</a>
     </div>
 </body>
+<script>
+  fetch("sidebar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("sidebar").innerHTML = data;
+    })
+    .catch(error => {
+      console.error("Sidebar failed to load:", error);
+    });
+</script>
 </html>

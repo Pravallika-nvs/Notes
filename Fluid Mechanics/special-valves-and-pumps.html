@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <aside w3-include-html="sidebar.html"></aside>
+    <aside id="sidebar"></aside>
     <section id="special-valves-and-pumps">
             <h2>8. Special Valves and Pumps</h2>
             <p>Special valves and pumps are designed for specific applications in fluid systems.</p>
@@ -32,6 +32,15 @@
   <a href="types-of-pumps.html" class="prev-btn">← Previous</a>
  
 </div>
-
+<script>
+  fetch("sidebar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("sidebar").innerHTML = data;
+    })
+    .catch(error => {
+      console.error("Sidebar failed to load:", error);
+    });
+</script>
 </body>
 </html>
