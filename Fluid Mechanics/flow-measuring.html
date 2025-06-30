@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <aside w3-include-html="sidebar.html"></aside>
+    <section id="flow-measuring">
+            <h2>6. Flow Measuring Devices</h2>
+            <p>Flow measuring devices are essential for monitoring and controlling fluid flow in various applications.</p>
+            <p>Common types include:</p>
+            <ul>
+                <li>Orifice Meters</li>
+                <li>Venturi Meters</li>
+                <li>Rotameters</li>
+                <li>Ultrasonic Flow Meters</li>
+            </ul>
+            <p>These devices help in measuring flow rate, pressure, and other parameters critical for system performance.</p>
+            <h3>6.1 Orifice Meters</h3>
+            <p>Orifice meters measure flow by creating a pressure drop across an orifice plate.</p>
+            <p>Features:</p>
+            <ul>
+                <li>Has a thin plate with a hole (orifice).</li>
+                <li>The fluid flows through the cross-sectional area.</li>
+                <li>Plate angle: 30° to 45°</li>
+                <li>Less efficient than Venturimeter but simpler.</li>
+            </ul>
+            <h3>6.2 Venturi Meters</h3>
+            <p>Venturi meters measure flow by utilizing the Venturi effect, where fluid velocity
+                increases as it passes through a constricted section of the pipe.</p>
+            <p>Features:</p>
+            <ul>
+                <li>Measures flow rate using converging and diverging sections.</li>
+                <li>Inlet (converging): 16–22°.</li>
+                <li>Outlet (diverging): 9°.</li>
+                <li>Has a coefficient close to 0.98.</li>
+                <li>Commonly used in the petroleum industry.</li>
+            </ul>
+            </section>
+            <div class="topic-nav">
+  <a href="types-of-flow.html" class="prev-btn">← Previous</a>
+  <a href="types-of-pumps.html" class="next-btn">Next →</a>
+</div>
+<script>
+  fetch("sidebar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("sidebar").innerHTML = data;
+    })
+    .catch(error => {
+      console.error("Sidebar failed to load:", error);
+    });
+</script>
+</body>
+</html>
