@@ -25,7 +25,6 @@ header h1 {
     background-color: #ACE1AF;
     width: 240px;
     min-height: 100vh;
-    padding: 1.5rem;
     box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
     position: relative;
 }
