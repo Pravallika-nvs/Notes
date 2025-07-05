@@ -21,7 +21,7 @@ header h1 {
     margin: 0;
 }
 
-aside #sidebar {
+#sidebar {
     background-color: #ACE1AF;
     width: 240px;
     min-height: 100vh;
