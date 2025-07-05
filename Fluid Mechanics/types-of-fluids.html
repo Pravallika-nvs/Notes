@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <h1>Engineering Concepts Hub</h1>
+    </header>
     <div id="navbar-container"></div>
+    <div id="page-wrapper">
     <aside id="sidebar"></aside>
+    <main>
     <section id="types-of-fluids">
-            <h2>2. Types of Fluids</h2>
-            <p>Fluids can be classified into two main types: Ideal Fluids and Real Fluids</p>
-            <h3>2.1 Ideal Fluids</h3>
-            <p>An ideal fluid is a theoretical concept, used as a benchmark.</p>
-            <p>It has:</p>
-            <ul>
-                <li>No viscosity</li>
-                <li>No internal resistance</li>
-            </ul>
-            <p>It is imaginary – such fluids do not exist in reality.</p>
-            <h3>2.2 Real Fluids</h3>
-            <p>A real fluid exists in the real world.</p>
-            <p>It has:</p>
-            <ul>
-                <li>Viscosity</li>
-                <li>Internal resistance</li>
-            </ul>
-            <p>Examples: Water, oil, air, etc.</p>
-            <img src="fluid_types.png" alt="Types of Fluids" style="width: 100%; height: auto;">
-        </section>
-        <div class="topic-nav">
-  <a href="what-is-a-fluid.html" class="prev-btn">← Previous</a>
-  <a href="pressure-drop.html" class="next-btn">Next →</a>
-</div>
-<script src="../navbar-loader.js"></script>
-<script>
-  fetch("sidebar.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("sidebar").innerHTML = data;
-    })
-    .catch(error => {
-      console.error("Sidebar failed to load:", error);
-    });
-</script>
-</body>
+      <h2>2. Types of Fluids</h2>
+      <p>
+        Fluids can be classified into two main types: Ideal Fluids and Real
+        Fluids
+      </p>
+      <h3>2.1 Ideal Fluids</h3>
+      <p>An ideal fluid is a theoretical concept, used as a benchmark.</p>
+      <p>It has:</p>
+      <ul>
+        <li>No viscosity</li>
+        <li>No internal resistance</li>
+      </ul>
+      <p>It is imaginary – such fluids do not exist in reality.</p>
+      <h3>2.2 Real Fluids</h3>
+      <p>A real fluid exists in the real world.</p>
+      <p>It has:</p>
+      <ul>
+        <li>Viscosity</li>
+        <li>Internal resistance</li>
+      </ul>
+      <p>Examples: Water, oil, air, etc.</p>
+      <img
+        src="fluid_types.png"
+        alt="Types of Fluids"
+        style="width: 100%; height: auto"
+      />
+    </section>
+    <div class="topic-nav">
+      <a href="what-is-a-fluid.html" class="prev-btn">← Previous</a>
+      <a href="pressure-drop.html" class="next-btn">Next →</a>
+    </div>
+    </main>
+  </div>
+    <footer>
+      <p>&copy; 2023 Engineering Concepts Hub</p>
+    </footer>
+    <script src="../navbar-loader.js"></script>
+    <script>
+      fetch("sidebar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("sidebar").innerHTML = data;
+        })
+        .catch((error) => {
+          console.error("Sidebar failed to load:", error);
+        });
+    </script>
+  </body>
 </html>
