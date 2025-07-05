@@ -35,6 +35,19 @@ header h1 {
     padding-left: 0;
 }
 
+#sidebar li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+#sidebar li a:hover {
+  background-color: #74C365;
+  color: white;
+  border-radius: 4px;
+}
+
 #page-wrapper {
     display: flex;
 }
