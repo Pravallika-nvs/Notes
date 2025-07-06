@@ -13,6 +13,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 
 }
 
 header h1 {
@@ -51,17 +52,20 @@ header h1 {
 .navbar {
   background-color: #0f1111;
   color: white;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
-  top: 0;
+  top: 60px;
   z-index: 1000;
+  display: flex;
 }
 
 .navbar a {
+  flex: 1;
+  text-align: center;
   color: white;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   margin-right: 1rem;
 }
 
