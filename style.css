@@ -98,6 +98,20 @@ main ul, p {
     margin-left: 1.5rem;
 }
 
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #d0f0c0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-content p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
 .topic-nav {
     justify-content: space-between;
     margin-top: 2rem;
