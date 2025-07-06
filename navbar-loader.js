@@ -1,5 +1,5 @@
 
-  fetch("../navbar.html")  // adjust path based on page location
+  fetch("/Notes/navbar.html")  // adjust path based on page location
     .then(response => response.text())
     .then(data => {
       document.getElementById("navbar-container").innerHTML = data;
