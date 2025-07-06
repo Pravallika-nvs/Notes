@@ -49,11 +49,21 @@ header h1 {
 }
 
 .navbar {
-    background-color: #0f1111;
-    color: white;
-    padding: 0.5rem 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #b4e09f;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
+.navbar a {
+  color: white;
+  background-color: #66bb6a;
+  text-decoration: none; 
+
+}
+
 
 #page-wrapper {
     display: flex;
