@@ -58,7 +58,7 @@ header h1 {
   z-index: 1000;
 }
 
-.navbar a {
+.navbar a:hover {
   color: white;
   background-color: #66bb6a;
   text-decoration: none; 
