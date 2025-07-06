@@ -13,13 +13,12 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    height: 
+    height: 40px;
 }
 
 header h1 {
     font-size: 1.8rem;
     font-weight: bold;
-    height: 40px;
     margin: 0;
 }
 
@@ -81,7 +80,42 @@ header h1 {
 }
 
 main {
+    flex: 1;
+    padding: 2rem;
+    min-height: 100vh;
     background-color: #d0f0c0;
+}
+
+main h2, h3 {
+    background-color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+main ul, p {
+    margin-left: 1.5rem;
+}
+
+.topic-nav {
+    justify-content: space-between;
+    margin-top: 2rem;
+    display: flex;
+
+}
+.topic-nav a {
+    background-color: #74C365;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.topic-nav a:hover {
+    background-color: #66bb6a;
+    color: white;
 }
 
 footer {
