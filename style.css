@@ -86,7 +86,7 @@ main {
     background-color: #d0f0c0;
 }
 
-main h2, h3 {
+main h2, h3, h4 {
     background-color: white;
     padding: 0.75rem 1rem;
     border-radius: 8px;
