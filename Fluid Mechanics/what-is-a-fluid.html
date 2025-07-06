@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>Engineering Concepts Hub</h1>
+    </header>
     <div id="navbar-container"></div>
+    <div id="page-wrapper">
     <aside id="sidebar"></aside>
+    <main>
     <section id="what-is-a-fluid">
         <h2>1. What is a Fluid?</h2>
         <p>A fluid is a substance that does not have a definite shape but takes the shape of its container.
@@ -23,7 +29,11 @@
     <div class="topic-nav">
         <a href="types-of-fluids.html" class="next-btn">Next →</a>
     </div>
-</body>
+    </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Engineering Concepts Hub</p> 
+    </footer>
 <script src="../navbar-loader.js"></script>
 <script>
   fetch("sidebar.html")
@@ -35,4 +45,5 @@
       console.error("Sidebar failed to load:", error);
     });
 </script>
+</body>
 </html>
